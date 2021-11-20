@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgba($color: #000000, $alpha: 1.0);
+}
+
+$light: rgba($color: #bebcbc, $alpha: 0.5);
+
+body{
+    // position: relative;
+    width: 100%;
+    // height: 100vh;
+
+    .bodycontainer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        // width: 100%;
+        // height: 100%;
+        background-color: rgb(255, 0, 212);
+
+        span{
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            height: 50%;
+            width: 30%;
+            background-color: royalblue;
+            border-radius: 50%;
+
+            &:nth-child( 2 ){
+                background-color: green;
+            }
+
+            &:nth-child( 3 ){
+                background-color: red;
+            }
+            &:nth-child( 4 ){
+                background-color: purple;
+            }
+            &:nth-child( 5 ){
+                background-color: orangered;
+            }
+            &:nth-child( 6 ){
+                background-color: magenta;
+            }
+        }
+
+        
+    }
+
+    .outercontainer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(100px);
+    }
+
+    // span{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 300px;
+    //     width: 300px;
+    //     background-color: royalblue;
+
+    //     &:nth-child( 2 ){
+    //         left: 300px;
+    //         background-color: lightseagreen;
+    //     }
+
+    //     &:nth-child( 3 ){
+    //         left: 600px;
+    //         background-color: red;
+    //     }
+    //     &:nth-child( 3 ){
+    //         left: 600px;
+    //         background-color: yellow;
+    //     }
+    // }
+
+    // span:nth-child( 2 ){
+    //     left: 300px;
+    //     background-color: lightseagreen;
+    // }
+    // span:nth-child( 2 ){
+    //     left: 300px;
+    //     background-color: lightseagreen;
+    // }
+}
+
+@media (min-width: 1440px) {
+    
+}

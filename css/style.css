@@ -314,7 +314,7 @@ header .container nav .login:hover, header .container nav .login:focus {
   position: absolute;
   right: 0;
   bottom: 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
