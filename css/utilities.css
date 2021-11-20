@@ -1,0 +1,84 @@
+/* 
+    Fonts
+*/
+
+h1, .h1{
+    font-size: 1.8rem;
+}
+
+h2, .h2{
+    font-size: 1.6rem;
+}
+
+h3, .h3{
+    font-size: 1.4rem;
+}
+
+h4, .h4{
+    font-size: 1.2rem;
+}
+
+h5, .h5{
+    font-size: 1rem;
+}
+
+h6, .h6{
+    font-size: .8rem;
+}
+
+p{
+    font-size: .8rem;
+}
+
+/* 
+    Spaces
+*/
+.m1{
+    margin: 1rem;
+}
+
+.m2{
+    margin: 2rem;
+}
+
+.my05{
+   margin: .5rem 0; 
+}
+.my1{
+   margin: 0 1rem; 
+}
+.mx05{
+   margin: .5rem 0; 
+}
+.mx1{
+   margin: 0 1rem; 
+}
+
+.py05{
+   padding: .5rem 0; 
+}
+.py1{
+   padding: 1rem 0; 
+}
+.px05{
+   padding: 0 .5rem ; 
+}
+.px1{
+   padding: 0 1rem; 
+}
+
+/* 
+    Display
+*/
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.bg{
+    background-color: black;
+}

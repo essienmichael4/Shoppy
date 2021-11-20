@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;900&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  background-color: #ebebeb;
+}
+
+header, section, footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#toggle-nav:checked ~ header .container nav {
+  right: 0;
+}
+
+header {
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  padding: 0 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .search-box {
+  background-color: white;
+  width: 25rem;
+  height: 1.8rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  justify-self: flex-end;
+  padding: .1rem;
+}
+
+header .container .search-box input {
+  padding-left: 1rem;
+  border: none;
+  outline: none;
+  width: 22.5rem;
+  height: 100%;
+  background-color: transparent;
+}
+
+header .container .search-box button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 30px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+header .container .search-box button:hover,
+header .container .search-box button:focus {
+  background-color: black;
+  color: white;
+}
+
+header .container nav {
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container nav ul {
+  gap: .2rem;
+}
+
+header .container nav ul li a {
+  padding: .2rem 1rem;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+header .container nav ul li a:hover, header .container nav ul li a:focus {
+  background-color: white;
+  color: black;
+}
+
+header .container nav i {
+  display: none;
+}
+
+header .container nav .login {
+  display: inline;
+  padding: .2rem 2rem;
+  border: 1px solid white;
+  font-weight: 500;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+header .container nav .login:hover, header .container nav .login:focus {
+  background-color: white;
+  color: black;
+}
+
+.banner {
+  height: 500px;
+}
+
+.banner .container {
+  background-image: url("../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.categories {
+  min-height: 500px;
+}
+
+.categories .container {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  padding: 2rem 0 5rem;
+}
+
+.categories .container .cardsContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.categories .container .cardsContainer .card {
+  width: 350px;
+  min-width: 320px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.categories .container .cardsContainer .card h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.categories .container .cardsContainer .card:first-child {
+  background-image: url("../assets/stuff.jpg");
+}
+
+.categories .container .cardsContainer .foodstuff {
+  background-image: url("../assets/foodstuff.jpg");
+}
+
+.categories .container .cardsContainer .fruits {
+  background-image: url("../assets/fruits.jpg");
+}
+
+.categories .container .cardsContainer .accessories {
+  background-image: url("../assets/accessories.jpg");
+}
+
+.categories .container .cardsContainer .shoes {
+  background-image: url("../assets/shoes.jpg");
+}
+
+.categories .container .cardsContainer .books {
+  background-image: url("../assets/books.jpg");
+}
+
+.categories .container .cardsContainer .books h2 {
+  font-size: 1.5rem;
+}
+
+.categories .container .cardsContainer .electronics {
+  background-image: url("../assets/electronics.jpg");
+}
+
+.categories .container .cardsContainer .fashion {
+  background-image: url("../assets/fashion.jpg");
+}
+
+.categories .container .cardsContainer .drinks {
+  background-image: url("../assets/drinks.jpg");
+}
+
+.products {
+  margin-top: 4rem;
+}
+
+.products .container {
+  height: 100%;
+}
+
+.products .container ul {
+  margin: 2rem 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products .container ul .productContainer {
+  width: 320px;
+  height: 120px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products .container ul .productContainer .product-image {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.products .container ul .productContainer .product-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.products .container ul .productContainer .product-info {
+  position: relative;
+  width: 70%;
+  height: 70%;
+}
+
+.products .container ul .productContainer .product-info p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.products .container ul .productContainer .product-info a {
+  cursor: pointer;
+  color: #0066ff;
+}
+
+.products .container ul .productContainer .product-info a:hover {
+  color: #5e5d5d;
+}
+
+.products .container ul .productContainer .product-info a i {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 5rem;
+  }
+  header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 1rem;
+  }
+  header .container h1 {
+    font-size: 1.3rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  header .container .search-box {
+    width: 100%;
+  }
+  header .container .search-box input {
+    width: 90%;
+  }
+  header .container .search-box button {
+    width: 20px;
+  }
+  header .container nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    right: -80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    gap: .5rem;
+  }
+  header .container nav ul {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 1rem;
+  }
+  header .container nav .menu {
+    display: block;
+    position: fixed;
+    top: .6rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  header .container nav .login {
+    position: fixed;
+    top: .5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .1rem .8rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
