@@ -142,7 +142,7 @@ p a {
 @media (min-width: 361px) {
   .orderDetails {
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     padding: 1rem 1rem;
     width: 360px;
