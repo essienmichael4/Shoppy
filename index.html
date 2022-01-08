@@ -4,81 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shoppy</title>
 
     <script src="https://kit.fontawesome.com/92a1905d17.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/utilities.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 
-    <input type="checkbox" id="toggle-nav" hidden>
-    <header>
-        <div class="container flex">
-            <h1>Shopping</h1>
-            <div class="search-box flex px05">
-                <input type="text" placeholder="Search for items here...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-            <nav class="flex">
-                <ul class="flex">
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="./src/products.html">products</a></li>
-                    <li><a href="">services</a></li>
-                    <li><a href="">blog</a></li>
-                </ul>
-                <a href="" class="login">login</a>
-
-                <label for="toggle-nav">
-                    <i class="fas fa-bars menu"></i>
-                </label>
-                
-            </nav>
-        </div>
+    <header class="flex">
+        <h1>Shoppy</h1>
     </header>
-
-    <section class="banner">
-        <div class="container">
-            
-        </div>
-    </section>
-    <section class="categories">
-        <div class="container flex">
-            <div class="cardsContainer flex">
-                <div class="card">
-                    <h2>Browse Stuff</h2>
-                </div>
-                <div class="card accessories">
-                    <h2>Accessories</h2>
-                </div>
-                <div class="card shoes">
-                    <h2>Shoes and Bags</h2>
-                </div>
-                <div class="card foodstuff">
-                    <h2>Food Stuffs</h2>
-                </div>
-                
-                <div class="card fruits">
-                    <h2>Fruits</h2>
-                </div>
-                <div class="card drinks">
-                    <h2>Drinks</h2>
-                </div>
-                <div class="card fashion">
-                    <h2>Fashion</h2>
-                </div>
-                <div class="card electronics">
-                    <h2>electronics</h2>
-                </div>
-                <div class="card books">
-                    <h2>Books and Stationary</h2>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+    <p>This is a temporary page to make orders as the application is still in development.
+        To visit and have a feel of the application, <a href="./products.html">click here.</a>
+    </p>
+    <form class="orderDetails" action="">
+        <h2>Order Details</h2>
+        <label for="">Full name</label>
+        <input type="text">
+        <label for="">Phone</label>
+        <input type="text" placeholder="active phone number">
+        <label for="">Email <span>(Optional)</span></label>
+        <input type="email" placeholder="example@email.com">
+        <label for="">Inventory</label>
+        <textarea name="" id="" cols="30" rows="6"
+        placeholder="items, quantiy/price"></textarea>
+        <button>Order</button>
+    </form>
     
 </body>
 </html>
