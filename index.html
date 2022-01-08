@@ -18,20 +18,45 @@
     </header>
     <p>This is a temporary page to make orders as the application is still in development.
         To visit and have a feel of the application, <a href="./products.html">click here.</a>
+        Also, you can call 0541072297 / 0576405706 for more info.
     </p>
-    <form class="orderDetails" action="">
+
+    <form id="my-form" class="orderDetails" action="https://formspree.io/f/xwkypzdo" method="POST">
         <h2>Order Details</h2>
         <label for="">Full name</label>
-        <input type="text">
+        <input type="text" name="name" required>
         <label for="">Phone</label>
-        <input type="text" placeholder="active phone number">
+        <input type="text" placeholder="active phone number" name="phone" required>
         <label for="">Email <span>(Optional)</span></label>
-        <input type="email" placeholder="example@email.com">
+        <input type="email" placeholder="example@email.com" name="email">
         <label for="">Inventory</label>
-        <textarea name="" id="" cols="30" rows="6"
-        placeholder="items, quantiy/price"></textarea>
-        <button>Order</button>
+        <textarea id="" cols="30" rows="6" placeholder="items, quantiy/price" name="message" required></textarea>
+        <button id="my-form-button">Order</button>
+        <p id="my-form-status"></p>
     </form>
+
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            status.innerHTML = "Thanks for your order! We'll get in touch with you shortly for more details";
+            form.reset()
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
     
 </body>
 </html>
