@@ -206,5 +206,9 @@ p a {
     color: #fff;
     cursor: pointer;
   }
+  .orderDetails p {
+    margin-top: .5rem;
+    background-color: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
